@@ -10,7 +10,6 @@ header {
     background-color: var(--blue-color);
 }
 
-
 header .container {
     justify-content: space-between;
     align-items: center;
