@@ -1,10 +1,134 @@
 /* RESET */
 *{
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
+}
+
+/* REGLE GENERALI */
+.container {
+    width: 100%;
+    padding: 0 2rem;
 }
 
 .flex{
     display: flex;
+}
+
+img{
+    width: 100%;
+}
+
+
+ul{
+    list-style: none;
+}
+
+/* SCROLL */
+html{
+    scroll-behavior: smooth;
+}
+
+#planning, #testimonials, #benefits, #about-us, #get-started{
+    scroll-margin-top: 40px;
+}
+
+/* PALETTE COLORI */
+:root{
+    --blue-color: #0084fd;
+    --light-blue-color: #b5ddff;
+    --violet-color: #9792e4;
+    --light-font: #5a6e7f;
+}
+
+/* SPAZI */
+:root{
+    --main-space: 2rem;
+    --half-space: 1rem;
+    --double-space: 4rem;
+}
+
+/* TESTO */
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+h2{
+    font-size: 1.8em;
+}
+
+h3{
+    font-size: 1.4em;
+}
+
+p{
+    line-height: 1.9em;
+}
+
+* > a{
+    color: inherit;
+}
+
+.yellow-text{
+    font-size: 4em;
+    font-weight: bold;
+    line-height: normal;
+
+    color: #FDC15F;
+}
+
+.text-s{
+    font-size: 0.9em;
+    line-height: normal;
+}
+
+/* BOTTONI */
+.button{
+    display: inline-block;
+    padding: 0.5em var(--main-space);
+
+    text-align: center;
+    border-radius: 50px;
+
+    text-decoration: none;
+
+    color: #000000;
+    background-color: #FFFFFF;
+
+    cursor: pointer;
+}
+
+.button.blue-button{
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+
+    color: #FFFFFF;
+    background-color: var(--blue-color);
+}
+
+.button.violet-button{
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+
+    color: #000000;
+    background-color: var(--violet-color);
+}
+
+.button.white-button{
+    padding: 1.5rem var(--double-space);
+
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+
+    color: var(--violet-color);
+}
+
+/* SECTIONS */
+section{
+    padding: var(--main-space) 0;
+}
+
+.violet-bg{
+    color: #FFFFFF;
+    background-color: var(--violet-color);
 }

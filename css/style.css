@@ -1,7 +1,329 @@
-/* REGOLE GENERALI */
-
 /* ----- HEADER ----- */
+header {
+    padding: 1rem 0;
+
+    position: sticky;
+    top: 0;
+    z-index: 30;
+
+    color: #FFFFFF;
+    background-color: var(--blue-color);
+}
+
+
+header .container {
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .menu-button {
+    border: none;
+    padding: 0.5rem;
+
+    color: #FFFFFF;
+    background-color: transparent;
+}
+
+header nav {
+    display: none; 
+}
+
+header nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul a{
+    margin-left: var(--main-space);
+    padding: var(--main-space) 0;
+
+    text-decoration: none;
+}
+
+header nav ul .button {
+    padding: 0.5em 1em;
+}
+
 
 /* ----- MAIN ----- */
 
+/* OVERVIEW */
+#overview .cards {
+    flex-wrap: wrap;
+}
+
+#overview .cards .card {
+    width: 100%;
+    margin-bottom: var(--main-space);
+    padding: 0 var(--main-space);
+
+    border-radius: 20px;
+
+    background-color: var(--light-blue-color);
+}
+
+#overview .cards .card:not(:first-child) {
+    text-align: center;
+}
+
+#overview .cards .card h3 {
+    margin-top: var(--main-space);
+
+    color: var(--blue-color);
+}
+
+#overview .cards .card p {
+    margin: var(--main-space) 0;
+
+    font-weight: bold;
+
+    color: var(--light-font);
+}
+
+#overview .cards .card .image {
+    margin-top: var(--main-space);
+}
+
+#overview .cards .card img {
+    display: block;
+}
+
+#overview .cards .card .icon {
+    margin-top: var(--main-space);
+
+    color: var(--blue-color);
+}
+
+/* PLANNING */
+#planning {
+    padding: var(--main-space) 0;
+}
+
+#planning .column {
+    margin: var(--main-space) 0;
+}
+
+#planning .column h2{
+    margin-top: var(--double-space);
+}
+
+#planning .column p{
+    margin-top: var(--main-space);
+}
+
+#planning .column.white-bg{
+    padding: var(--main-space);
+
+    text-align: center;
+
+    border-radius: 20px;
+
+    color: #000000;
+    background-color: #FFFFFF;
+}
+
+#planning .column.white-bg h3 {
+    margin-top: var(--half-space);
+}
+
+#planning .column.white-bg p {
+    margin-top: var(--half-space);
+
+    font-style: italic;
+}
+
+#planning .column.white-bg a{
+    margin-top: var(--half-space);
+    padding: 1em;
+
+    line-height: 1em;
+    border-radius: 50%;
+}
+
+/* TESTIMONIALS */
+#testimonials .container > * {
+    margin-bottom: var(--main-space);
+
+    text-align: center;
+}
+
+#testimonials h2 {
+    color: var(--violet-color);
+}
+
+#testimonials p {
+    margin-top: var(--main-space);
+
+    font-size: 1.2em;
+}
+
+#testimonials .card {
+    padding: var(--main-space) var(--half-space);
+    
+    border-radius: 40px;
+
+    color: #FFFFFF;
+    background-color: var(--violet-color);
+}
+
+#testimonials .card .image {
+    width: 100%;
+}
+
+#testimonials .card img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#testimonials .card p {
+    margin-top: var(--half-space);
+}
+
+#testimonials .card h3 {
+    margin-top: var(--main-space);
+
+    text-transform:uppercase;
+    letter-spacing: 0.1rem;
+}
+
+
+/* BENEFITS */
+#benefits h2{
+    margin-top: var(--main-space);
+    margin-bottom: var(--double-space);
+
+    text-align: center;
+}
+
+#benefits .card {
+    margin-top: var(--main-space);
+    padding: var(--main-space);
+
+    border-radius: 20px;
+
+    color: var(--violet-color);
+    background-color: #FFFFFF;
+}
+
+#benefits .card .number {
+    font-size: 3em;
+    font-weight: bold;
+    text-align: left;
+    line-height: normal;
+}
+
+#benefits .card h3 {
+    margin-top: var(--main-space);
+}
+
+#benefits .card p:not(.number) {
+    margin-top: var(--main-space);
+
+    color: var(--light-font);
+}
+
+#benefits .card .button {
+    margin-top: var(--main-space);
+
+    color: #FFFFFF;
+}
+
+/* ABOUT */
+#about-us {
+    padding-top: var(--double-space);
+}
+#about-us .column-left, #about-us .column-right {
+    margin-bottom: var(--main-space);
+}
+
+#about-us h2 {
+    color: var(--violet-color);
+}
+
+#about-us .big-title {
+    font-size: 2.5em;
+}
+
+#about-us p{
+    margin-top: var(--main-space);
+}
+
+#about-us .column-right .image {
+    width: 200px;
+    height: 200px;
+    margin-bottom: var(--main-space);
+
+    text-align: center;
+
+    position: relative;
+}
+
+#about-us .column-right img {
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#about-us .quote-square .fa-quote-left {
+    position: absolute;
+    right: -10px;
+    top: -10px;
+
+    font-size: 75px;
+
+    color: var(--violet-color);
+}
+
+#about-us .column-right .button {
+    margin-top: var(--main-space);
+
+    font-weight: 400;
+    letter-spacing: normal;
+
+    color: #FFFFFF;
+}
+
+#about-us .column-right .button i {
+    margin-right: 0.5em;
+}
+
+/* GET STARTED */
+#get-started {
+    text-align: center;
+}
+
+#get-started p, #get-started h2, #get-started .button {
+    margin-top: var(--main-space);
+}
+
+#get-started .text-s {
+    margin-bottom: var(--main-space);
+}
+
+#get-started .container p:first-child {
+    letter-spacing: 0.1rem;
+
+    color: #d5d4f4;
+}
+
+
+
 /* ----- FOOTER ----- */
+footer {
+    padding: var(--main-space) 0;
+    
+    text-align: center;
+
+    color: #FFFFFF;
+    background-color: #333333;
+}
+
+footer p:last-child{
+    margin-top: var(--double-space);
+}
+
+footer a{
+    color: var(--violet-color);
+}
